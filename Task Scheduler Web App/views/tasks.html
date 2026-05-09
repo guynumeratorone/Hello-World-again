@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task Scheduler Web App</h1>
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/create">Create Task</a>
+            <a href="/tasks">Task List</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-card">
+            <h2>Task List</h2>
+            <p>Tasks below are generated dynamically from the local JSON data file.</p>
+            <div class="task-list">
+                {{taskCards}}
+            </div>
+        </section>
+    </main>
+</body>
+</html>

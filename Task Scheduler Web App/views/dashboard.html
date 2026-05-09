@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler Web App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task Scheduler Web App</h1>
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/create">Create Task</a>
+            <a href="/tasks">Task List</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-card">
+            <h2>Dashboard</h2>
+            <p>This web app lets users create simple scheduled tasks, view task status, and simulate task activity. Communication pathways to users have not yet been implemented.</p>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p>{{totalTasks}}</p>
+            </div>
+            <div class="stat-card">
+                <h3>Complete</h3>
+                <p>{{completedTasks}}</p>
+            </div>
+            <div class="stat-card">
+                <h3>Incomplete</h3>
+                <p>{{incompleteTasks}}</p>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Recent Tasks</h2>
+            <ul class="recent-list">
+                {{recentTasks}}
+            </ul>
+            <a class="primary-link" href="/create">Create a New Task</a>
+        </section>
+    </main>
+</body>
+</html>

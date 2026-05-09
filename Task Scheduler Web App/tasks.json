@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1778025415224-42573",
+    "name": "thing to do",
+    "type": "Study Task",
+    "schedule": "Every morning when you wake up",
+    "description": "keep an unhealthy study schedule",
+    "completed": true,
+    "lastRun": "5/5/2026, 5:56:58 PM"
+  },
+  {
+    "id": "1778357061634-92947",
+    "name": "Learn something new everyday",
+    "type": "General",
+    "schedule": "Every day for ever",
+    "description": "Learn something new, even if its something you forgot.",
+    "completed": false,
+    "lastRun": "5/9/2026, 2:09:31 PM"
+  }
+]

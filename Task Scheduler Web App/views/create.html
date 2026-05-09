@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task Scheduler Web App</h1>
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/create">Create Task</a>
+            <a href="/tasks">Task List</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-card">
+            <h2>Create Task</h2>
+            <p>Enter task information below. The task will be saved to the local JSON file and shown on the task list page.</p>
+
+            <form class="task-form" method="POST" action="/create-task">
+                <label for="name">Task Name</label>
+                <input id="name" name="name" type="text" placeholder="Example: Weekly backup" required>
+
+                <label for="type">Task Type</label>
+                <select id="type" name="type">
+                    <option value="Reminder">Reminder</option>
+                    <option value="File Maintenance">File Maintenance</option>
+                    <option value="Study Task">Study Task</option>
+                    <option value="General">General</option>
+                </select>
+
+                <label for="schedule">Schedule</label>
+                <input id="schedule" name="schedule" type="text" placeholder="Example: Every Friday at 5:00 PM" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe what this task is supposed to do." required></textarea>
+
+                <button type="submit">Save Task</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
